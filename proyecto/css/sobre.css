@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Iceland&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Iceland', cursive;
+    color: white;
+    text-align: justify;
+}
+
+#contenedor{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    /*grid-template-rows: auto;*/
+     grid-template-areas: 
+     "header header"
+     "aside main"
+     "footer footer";
+     height: 100vh;
+}
+
+h2{
+    font-size: 3em;
+}
+
+body{
+    background: #4b6cb7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #182848, #4b6cb7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #182848, #4b6cb7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav{
+    background-color: #4b6cb7;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    background-color: white;
+    color: black;
+}
+
+header{
+    grid-area: header;
+}
+
+main{
+    grid-area: main;
+    padding: 10px;
+    font-size: larger;
+}
+
+aside{
+    grid-area: aside;
+    background-color: #4b6cb7;
+    border: 1px solid white;
+    border-radius: 10%;
+    padding: 10px;
+    overflow: hidden;
+}
+
+footer{
+    grid-area: footer;
+    margin-top: 15em;
+}
+
+.imgyo{
+    position: relative;
+    left: 20%;
+}
+
+img{
+    width: 50%;
+    height: 20%;
+    border-radius: 10%;
+}
+
+div{
+    padding: 5px;
+}
+
+@media (max-width:500px) {
+    #contenedor{
+        display: grid;
+        grid-template-columns: 100%;
+        /*grid-template-rows: auto;*/
+         grid-template-areas: 
+         "header"
+         "nav"
+         "aside"
+         "main"
+         "footer";
+         height: 100vh;
+    }
+
+    aside{
+        grid-area: aside;
+        height: 90vh;
+    }
+
+    footer{
+        font-size: small;
+    }
+}
