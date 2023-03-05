@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sugerencias para nuestra pagina y subscripcion a nuestra pagina</title>
+    <link rel="stylesheet" href="../css/formulario.css">
+    <link rel="shortcut icon" href="../fuentesyFotos/logo.png" type="image/x-icon">
+</head>
+<body>
+    <div id="contenedor">
+        <h1>Sugerencias</h1>
+        <form action="./DatosFormulario.php" method="post">
+            <div class="form-control">
+                <input type="text" required="">
+                <label>
+                    <span id="n">N</span><span id="o">o</span><span id="m">m</span><span id="b">b</span><span id="r">r</span><span id="e">e</span>
+                </label>
+            </div>
+            <label for="edad">Edad:*</label><input class="input" type="number" min="1" max="150"  id="edad" value="18" name="edad" required>
+            <fieldset>
+                <legend>Genero</legend>
+                <label for="hombre">Hombre:</label><input type="radio" name="genero" value="hombre" id="hombre"><br>
+                <label for="mujer">Mujer:</label><input type="radio" name="genero" value="mujer" id="mujer"><br>
+                <label for="otro">Prefiero no decirlo:</label><input type="radio" name="genero" value="otro" checked id="otro">     
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>¿Acepta que le enviemos anuncios y promociones sobre nuestra pagina?:*</legend>
+                <label for="anuncios">Anuncios</label> <input type="checkbox" name="anuncios" value="anuncios" id="anuncios" checked>      
+                <label for="promociones">Promociones</label> <input type="checkbox" name="promociones" value="promociones" id="promociones">          
+            </fieldset>
+            <label for="email">Email:*</label><input class="input" type="email" name="email" id="email" placeholder="example@gmail.com" required>          
+            <label for="descripcion">¿Alguna pelicula/serie que añadir o quitar?</label><br><textarea class="input" id="descripcion" cols="50" rows="15" name="descripcion" placeholder="Este campo es opcional"></textarea>         
+            <br><br>
+            <input class="input" type="submit" value="Enviar Datos"><br>
+            <input class="input" type="reset" value="Reiniciar">
+        </form>
+        <footer>
+            <nav id="peque">
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../sobreMi/sobremi.html">Sobre mi</a></li>    
+                    <li><a href="../video/video.html">Video promocional</a></li>
+                </ul>
+            </nav>
+        </footer>
+    </div>
+</body>
+</html>
