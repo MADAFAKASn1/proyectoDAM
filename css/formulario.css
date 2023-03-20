@@ -56,6 +56,12 @@ footer{
   margin-top: 10rem;
 }
 
+.boton{
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-top: 15px;
+}
+
 fieldset{
   width:80%;
   padding-top: 60px;
